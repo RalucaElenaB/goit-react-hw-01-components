@@ -1,0 +1,7 @@
+.friend-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 200px;
+  max-width: 300px;
+}
