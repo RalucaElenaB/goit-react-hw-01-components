@@ -1,6 +1,7 @@
 .item {
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+
   margin-bottom: 10px;
   border: 0.5px solid #d3d3d3;
   box-shadow: 1px 1px 2px 1px #d3d3d3;
@@ -11,8 +12,16 @@
   margin-right: 10px;
   padding: 6px;
   border-radius: 50%;
-  /* background-color: ${props => (props.isOnline ? 'green' : 'red')}; */
 }
+
+.statusOnline {
+  background-color: green;
+}
+
+.statusOffline {
+  background-color: red;
+}
+
 .avatar {
   border: 0.5px solid #d3d3d3;
   border-radius: 5px;
@@ -21,4 +30,5 @@
 
 .name {
   font-family: Arial, sans-serif;
+  margin: 0;
 }

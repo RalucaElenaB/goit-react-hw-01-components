@@ -8,19 +8,32 @@ import { Fragment } from 'react';
 import friendData from 'data/friends.json';
 import FriendList from './FriendList/FriendList';
 
+import transactionData from 'data/transactions.json';
+import TransactionHistory from './TransactionHistory/TransactionHistory';
+
+import Container from './Container/Container';
+
 export const App = () => {
   return (
     <>
-      <Profile
-        username={user.username}
-        tag={user.tag}
-        location={user.location}
-        avatar={user.avatar}
-        stats={user.stats}
-      />
-      <Statistics title="Upload stats" stats={statisticsData} />
-
-      <FriendList friends={friendData} />
+      <Container>
+        <Profile
+          username={user.username}
+          tag={user.tag}
+          location={user.location}
+          avatar={user.avatar}
+          stats={user.stats}
+        />
+      </Container>
+      <Container>
+        <Statistics title="Upload stats" stats={statisticsData} />
+      </Container>
+      <Container>
+        <FriendList friends={friendData} />
+      </Container>
+      <Container>
+        <TransactionHistory items={transactionData} />
+      </Container>
     </>
   );
 };

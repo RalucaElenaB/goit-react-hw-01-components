@@ -4,7 +4,7 @@
   align-items: center;
   background-color: #d3d8e0;
   padding: 50px 30px;
-  max-width: 300px;
+  /* max-width: 300px; */
   font-family: Arial Black, Arial;
 }
 .title {
@@ -15,11 +15,14 @@
   padding: 15px 30px;
   min-width: 200px;
 }
+
 .stat-list {
   display: flex;
-  flex-direction: row;
-  font-size: 10px;
+
+  padding: 0 50px;
+  margin-top: -12px;
 }
+
 .item {
   display: flex;
   flex-direction: column;
@@ -27,6 +30,7 @@
   min-width: 30px;
   padding: 10px;
 }
+
 .label {
   color: black;
   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
